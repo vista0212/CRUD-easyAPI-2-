@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>create</h1>
+    <form method="POST" action="/join">
+        <input type="text" name="id" />
+        <input type="pw" name="pw" />
+        <input type="text" name="name" />
+        <input type="submit" />
+    </form>
+    <h1>read</h1>
+    <a><%=id%></a>
+    <a><%=pw%></a>
+    <a><%=name%></a>
+    <h1>update</h1>
+    <form method="POST" action="/update">
+        <input type="text" name="nowID" />
+        <input type="text" name="updateId" />
+        <input type="submit" />
+    </form>
+    <h1>delete</h1>
+    <form method="POST" action="/delete">
+        <input type="text" name="deleteId" />
+        <input type="text" name="deletePw" />
+        <input type="text" name="deleteName" />
+        <input type="submit" />
+    </form>
+</body>
+</html>
